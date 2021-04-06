@@ -6,6 +6,25 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
+    children: [
+      {
+        path: 'partidos',
+        loadChildren: () => import('../partidos/partidos.module').then(m => m.PartidosPageModule)
+      },
+      {
+        path: 'tabla',
+        loadChildren: () => import('../tabla/tabla.module').then(m => m.TablaPageModule)
+      },
+      {
+        path: 'fixture',
+        loadChildren: () => import('../fixture/fixture.module').then(m => m.FixturePageModule)
+      },
+    ]
+  },
+  {
+    path: '',
+    redirectTo: '/home/partidos',
+    pathMatch: 'full'
   }
 ];
 
