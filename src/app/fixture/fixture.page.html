@@ -1,8 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title slot="end">
-      Fixture
-    </ion-title>
+    <ion-title slot="start"> LIGA FAC </ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-title size="small"> Fixture </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -12,6 +13,14 @@
       <ion-title size="large">Fixture</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-card>
+    <ion-item>
+      <ion-label class="ion-text-start">LaPena</ion-label>
+      <ion-label class="ion-text-center"> vs</ion-label>
+      <ion-label class="ion-text-end">LaCai</ion-label>
+    </ion-item>
+  </ion-card>
 
   <app-explore-container name="Fixture"></app-explore-container>
 </ion-content>

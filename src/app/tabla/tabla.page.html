@@ -1,8 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title slot="end">
-      Tabla
-    </ion-title>
+    <ion-title slot="start"> LIGA FAC </ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-title size="small"> Tabla </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -12,6 +13,41 @@
       <ion-title size="large">Tabla</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-toolbar>
+    <ion-segment value="categoriaA">
+      <ion-segment-button value="categoriaA">
+        <ion-label>Categoria A</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="categoriaB">
+        <ion-label>Categoria B</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Santo Tomas</ion-label>
+      <ion-note slot="end" color="primary">33</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Benfica</ion-label>
+      <ion-note slot="end" color="primary">30</ion-note>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>LaPena</ion-label>
+      <ion-note slot="end" color="primary">20</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Quilmes</ion-label>
+      <ion-note slot="end" color="primary">17</ion-note>
+    </ion-item>
+  </ion-list>
 
   <app-explore-container name="Tabla"></app-explore-container>
 </ion-content>

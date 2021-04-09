@@ -5,30 +5,34 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'home',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () =>
+      import('./home/home.module').then((m) => m.HomePageModule),
   },
   {
     path: 'partidos',
-    loadChildren: () => import('./partidos/partidos.module').then( m => m.PartidosPageModule)
+    loadChildren: () =>
+      import('./partidos/partidos.module').then((m) => m.PartidosPageModule),
   },
   {
     path: 'tabla',
-    loadChildren: () => import('./tabla/tabla.module').then( m => m.TablaPageModule)
+    loadChildren: () =>
+      import('./tabla/tabla.module').then((m) => m.TablaPageModule),
   },
   {
     path: 'fixture',
-    loadChildren: () => import('./fixture/fixture.module').then( m => m.FixturePageModule)
+    loadChildren: () =>
+      import('./fixture/fixture.module').then((m) => m.FixturePageModule),
   },
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
