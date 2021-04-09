@@ -19,13 +19,14 @@ const routes: Routes = [
         path: 'fixture',
         loadChildren: () => import('../fixture/fixture.module').then(m => m.FixturePageModule)
       },
+      {
+        path: '',
+        redirectTo: '/home/partidos',
+        pathMatch: 'full'
+      }
     ]
   },
-  {
-    path: '',
-    redirectTo: '/home/partidos',
-    pathMatch: 'full'
-  }
+
 ];
 
 @NgModule({
