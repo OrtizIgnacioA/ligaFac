@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ligaFac</string>
+    <string name="title_activity_main">ligaFac</string>
+    <string name="package_name">liga.fac.com</string>
+    <string name="custom_url_scheme">liga.fac.com</string>
+</resources>
